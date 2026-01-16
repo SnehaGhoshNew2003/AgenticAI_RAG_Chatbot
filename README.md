@@ -28,26 +28,29 @@ HF_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ---
 
 ##  System Architecture
+```
 ┌─────────────┐
-│ Streamlit │ Frontend UI
+│ Streamlit   │ Frontend UI
 └──────┬──────┘
-│ HTTP
+       │ HTTP
 ┌──────▼──────┐
-│ FastAPI │ Backend API
+│ FastAPI     │ Backend API
 └──────┬──────┘
-│
+       │
 ┌──────▼──────┐
-│ LangGraph │ Workflow Engine
+│ LangGraph   │ Workflow Engine
 │ (Classify → │
-│ Retrieve → │
-│ Generate) │
+│ Retrieve →  │
+│ Generate)   │
 └──────┬──────┘
-│
+       │
 ┌─────┴─────┬───────────────┐
-│ │ │
-▼ ▼ ▼
-ChromaDB Gemini LLM HF Embeddings
-(Vector) (LLM) (Semantic)
+│           │               │
+▼           ▼               ▼
+ChromaDB   Gemini LLM      HF Embeddings
+(Vector)   (LLM)           (Semantic)
+```
+---
 
 ## Install Dependencies
 
