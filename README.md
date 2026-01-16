@@ -15,7 +15,7 @@ A **Retrieval-Augmented Generation (RAG)** based chatbot that answers user queri
 - **Streamlit Frontend** – Clean and interactive user interface  
 
 ---
-## ⚙️ Environment Setup
+## Environment Setup
 
 Create a `.env` file in the project root directory:
 
@@ -28,30 +28,28 @@ HF_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 ---
 
 ##  System Architecture
-
 ┌─────────────┐
-│ Streamlit   │ Frontend UI
+│ Streamlit │ Frontend UI
 └──────┬──────┘
-       │ HTTP
+│ HTTP
 ┌──────▼──────┐
-│ FastAPI     │ Backend API
+│ FastAPI │ Backend API
 └──────┬──────┘
-       │
+│
 ┌──────▼──────┐
-│ LangGraph   │ Workflow Engine
+│ LangGraph │ Workflow Engine
 │ (Classify → │
-│ Retrieve →  │
-│ Generate)   │
+│ Retrieve → │
+│ Generate) │
 └──────┬──────┘
-       │
+│
 ┌─────┴─────┬───────────────┐
-│           │               │
-▼           ▼               ▼
-ChromaDB   Gemini LLM      HF Embeddings
-(Vector)   (LLM)           (Semantic)
+│ │ │
+▼ ▼ ▼
+ChromaDB Gemini LLM HF Embeddings
+(Vector) (LLM) (Semantic)
 
-
-## 📦 Install Dependencies
+## Install Dependencies
 
 Install all required Python packages using:
 
@@ -59,7 +57,7 @@ Install all required Python packages using:
 pip install -r requirements.txt
 ```
 
-## 📄 PDF Ingestion
+## PDF Ingestion
 
 Place your ebook PDF in the project root directory and run:
 
@@ -76,7 +74,7 @@ python -m app.ingest
 
 ---
 
-## 🚀 Backend (FastAPI)
+## Backend (FastAPI)
 
 Start the FastAPI backend server using:
 
@@ -93,14 +91,14 @@ uvicorn backend.main:app --reload
 
 ---
 
-## 🎨 Frontend (Streamlit)
+## Frontend (Streamlit)
 
 Launch the Streamlit frontend interface with:
 
 ```bash
 streamlit run frontend/front.py
 ```
-### 🎨 Frontend Capabilities
+### Frontend Capabilities
 
 The frontend allows users to:
 
@@ -110,7 +108,7 @@ The frontend allows users to:
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - **LangChain** – LLM orchestration  
 - **LangGraph** – Agentic workflow and state management  
@@ -121,7 +119,7 @@ The frontend allows users to:
 - **Google Gemini LLM** – Response generation  
 
 ---
-## 📦 Cloning the Project
+## Cloning the Project
 
 To get started with this project, you need to clone the repository to your local machine. Make sure you have **Git** installed.
 
