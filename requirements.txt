@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langgraph
+langchain-google-genai
+chromadb
+sentence-transformers
+pypdf
+python-dotenv
+tiktoken
+langchain-community
+streamlit 
+requests
