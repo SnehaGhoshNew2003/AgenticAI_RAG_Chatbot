@@ -52,7 +52,7 @@ ChromaDB   Gemini LLM      HF Embeddings
 ```
 ---
 ## Project Folder 
-
+```
 NEW_RAG/
 ├── app/
 │   ├── config.py        # Environment configuration
@@ -68,7 +68,7 @@ NEW_RAG/
 ├── requirements.txt
 ├── .env
 └── README.md
-
+```
 ---
 ## Install Dependencies
 
