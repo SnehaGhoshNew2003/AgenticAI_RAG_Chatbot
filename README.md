@@ -51,7 +51,25 @@ ChromaDB   Gemini LLM      HF Embeddings
 (Vector)   (LLM)           (Semantic)
 ```
 ---
+## Project Folder 
 
+NEW_RAG/
+├── app/
+│   ├── config.py        # Environment configuration
+│   ├── vectorstore.py   # ChromaDB + embeddings
+│   ├── llm.py           # Gemini LLM wrapper
+│   ├── graph.py         # LangGraph workflow
+│   └── ingest.py        # PDF ingestion pipeline
+├── backend/
+│   └── main.py          # FastAPI server
+├── frontend/
+│   └── front.py         # Streamlit UI
+├── Ebook.pdf            # Source document
+├── requirements.txt
+├── .env
+└── README.md
+
+---
 ## Install Dependencies
 
 Install all required Python packages using:
